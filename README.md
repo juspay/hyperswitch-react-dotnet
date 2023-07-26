@@ -1,4 +1,4 @@
-# Hyperswitch React + Dotnet(.NET) Integration
+# Hyperswitch React + DotNet(.NET) Integration
 
 Build a simple checkout web-app to collect payment details and make a dummy payment. Included are some basic build and run scripts you can use to run the demo application.
 
@@ -27,15 +27,22 @@ Don't have a Hyperswitch account? [Sign up here!](https://app.hyperswitch.io/reg
 ~~~
 npm install
 ~~~
-
-3. Run the development server:
-
 ~~~
-npm start
+dotnet restore
 ~~~
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Run the server :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+~~~
+npm run start-server
+~~~
+
+Runs the backend server in the development mode.
+
+4. Run the client :
+
+~~~
+npm run start-client
+~~~
+
+Now, you can navigate to [http://localhost:3000](http://localhost:3000) to access the checkout page in your browser.
